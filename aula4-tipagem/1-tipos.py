@@ -21,3 +21,15 @@ print('10', type('10'), type(int('10')))  # Conversão de str pra int apenas pra
 
 # print('victor', int('victor')) dá erro.
 # print('10.3', int('10.3')) dá erro.
+
+# Nome: str
+print('Victor Martins', type('Victor Martins'))
+
+# Idade: int
+print(25, type(25))
+
+# Altura: float
+print(1.83, type(1.83))
+
+# É maior de idade x>18
+print(32>18, type(32>18))
