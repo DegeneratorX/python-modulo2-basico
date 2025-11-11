@@ -36,7 +36,7 @@ print('{0} tem {1} anos de idade, possui {2} de altura, pesa {3}kg e tem imc {4:
 print('{4} tem {3} anos de idade, possui {2} de altura, pesa {0}kg e tem imc {1:.2f}'.format(nome, idade, altura, peso,
                                                                                              imc))
 
-# E por último, dá pra nomear os campos dentro do .format()
+# Também dá pra nomear os campos dentro do .format()
 """
 Também dá pra atribuir dentro da print letras e no final designar o que cada uma significa. Além de claro, usar o
 end='' para a print não pular uma linha pro próximo comando.
@@ -45,3 +45,20 @@ print('{n} tem {i} anos de idade, possui {h} de altura, pesa {p}kg e tem imc {im
 
 
 print(f' {nome} nasceu em {data_nascimento}')
+
+# Finalmente, dá pra interpolar variáveis dentro de strings com o método %
+"""
+Esse método é mais antigo, mas ainda funciona. Basta colocar o %s para strings, %d e %i para inteiros, %f para
+floats e %x (minúsculo) e %X (maiúsculo) para hexadecimais. Dá pra ajustar as casas decimais também, como em %.2f.
+"""
+
+nome = 'Victor'
+print('Meu nome é %s' % nome)
+
+idade = 28
+altura = 1.83
+# Exemplo com mais de uma variável (precisa dos parênteses)
+print('Tenho %d anos e %.2f de altura.' % (idade, altura))
+
+# Exemplo com hexadecimal (converte automaticamente para hexadecimal)
+print('O hexadecimal de %d é %08X' % (1500, 1500))

@@ -8,7 +8,7 @@ in, not in
 a = 2
 b = 3
 
-if not b>a:  # not = ! = inverte o operador.
+if not b>a:  # not = ! = inverte o operador ou a expressão.
     print('A é maior do que B')
 else:
     print('B é maior do que A')
@@ -43,7 +43,7 @@ else:
 if 'asas' not in nome:
     print('Esse comando será executado')
 else:
-    print("Se isso aqui executar, é um milagre. Mas existe 'asas' na palavra.")
+    print("Se isso aqui executar, é um milagre.")
 
 
 
