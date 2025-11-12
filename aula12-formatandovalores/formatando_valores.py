@@ -40,6 +40,16 @@ print(f'{titulo:=^20}') # Adiciona = ao centro, totalizando 20 caracteres
 
 print(f'{num_2:0^10.2f}') # Adiciona 0s ao centro, totalizando 10 caracteres, com 2 casas decimais
 
-print(titulo.lower())  # Deixa tudo minúsculo
-print(titulo.upper())  # Deixa tudo maiúsculo
-print(titulo.title())  # Primeiras letras maiúsculas
+# Caso extremo
+"""
+O resultado do número 1150.54156487 com 0=+10,.1f é +001,150.5
+O que acontece aqui é o seguinte:
+
+1. O número 1150.54156487 é formatado para ter 1 casa decimal, resultando em 1150.5.
+2. O sinal de positivo (+) é adicionado antes do número, resultando em +1150.5.
+3. O total de caracteres desejados é 10. Atualmente, o número +1150.5 tem 7 caracteres (incluindo o sinal e o ponto decimal).
+4. Para completar os 10 caracteres, são adicionados 3 zeros (0) à esquerda do número, resultando em +001,150.5.
+5. Além disso, um separador de milhar (vírgula) é adicionado para melhorar a legibilidade, resultando em +001,150.5.
+"""
+num_3 = 1150.54156487
+print(f'{num_3:0=+10,.1f}')
