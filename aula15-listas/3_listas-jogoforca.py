@@ -1,9 +1,7 @@
 """
 Listas em Python
-fatiamento
-append, insert, pop, del, clear, extend, +
-min, max
-range
+
+Exercício - Jogo da Forca
 """
 secreto = 'perfume'  # Palavra secreta
 digitadas = []  # Crio uma string vazia
