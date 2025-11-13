@@ -1,8 +1,6 @@
 """
-Operadores Lógicos
-
-and, or, not
-in, not in
+Conditions
+Exercício de Senha
 """
 
 a = 2
