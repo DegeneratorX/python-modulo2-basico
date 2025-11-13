@@ -1,3 +1,7 @@
+"""
+Mais exemplos com for
+"""
+
 for n in range(0,100,8):  # Esse range é semelhante a linguagem C. N vai de 0 até 100, mas pula 8 casas.
     print(n)  # Por coincidência mostra os múltiplos de 8.
 

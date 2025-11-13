@@ -3,6 +3,7 @@ titulo = "BeM viNdO"
 print(titulo.lower())  # Deixa tudo minúsculo
 print(titulo.upper())  # Deixa tudo maiúsculo
 print(titulo.title())  # Primeira letra maiúsculas de cada palavra
+print(titulo.capitalize())  # Primeira letra maiúscula da string
 
 print(f'{titulo:=^20}') # Adiciona = ao centro, totalizando 20 caracteres
 

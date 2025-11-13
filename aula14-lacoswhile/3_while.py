@@ -2,6 +2,14 @@
 While / Else
 contadores
 acumuladores
+
+- Contadores: Variáveis que vão contando quantas vezes uma ação foi realizada.
+- Acumuladores: Variáveis que vão acumulando valores ao longo do tempo.
+
+O else é um bloco de código que é executado quando a condição do while se torna falsa.
+Parece inútil, mas tem sua utilidade quando usamos break dentro do while. Se o
+break for executado, o else não será executado.
+
 """
 
 contador = 1
@@ -15,6 +23,7 @@ while contador <= 10:
 
 ###############################
 
+# Exemplo com break no while e else
 while contador <= 10:
     print(contador, acumulador)
 

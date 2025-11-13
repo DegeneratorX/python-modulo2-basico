@@ -1,3 +1,4 @@
+# Calculadora simples com while
 while True:
     print()
     num1 = input("Digite um numero:  ")
