@@ -33,7 +33,7 @@ lista_palavras[0] = "Laboratório"
 print("Lista de palavras após alteração do índice 0:", lista_palavras)  # Printará ['Laboratório', 'Python', 'Olá'].
 
 
-################################################
+print("\n###################################\n")
 
 texto = "Valor"
 num = 2
@@ -43,4 +43,18 @@ print("Lista exemplo:", listaExemplo)  # Printa a lista toda.
 
 print("Veja como a referência é a mesma:", id(num), id(listaExemplo[1])) # Mostra que o endereço do num e o endereço do índice 1 da lista são os mesmos.
 
+"""
+Listas Multidimensionais - listas dentro de listas
 
+As listas podem conter outras listas, formando listas multidimensionais, ou Matrizes.
+"""
+
+matriz = [[1,2,3], [4,5,6], [7,8,9]]  # lista 2D (matriz 3x3)
+print("Lista matriz (2D):", matriz)
+print("Acessando o elemento na linha 1, coluna 2:", matriz[1][2])  # acessa o elemento 6
+
+# printando a matriz de forma estruturada
+for linha in matriz:
+    for elemento in linha:
+        print(elemento, end=' ')
+    print()  # nova linha após cada linha da matriz
